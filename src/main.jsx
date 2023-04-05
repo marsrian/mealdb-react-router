@@ -12,6 +12,7 @@ import About from './About';
 import Login from './Login';
 import MealDetails from './MealDetails';
 import HomePage from './HomePage';
+import NotFound from './NotFound';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element: <Login></Login>
+      },
+      {
+        path: '*',
+        element: <NotFound></NotFound>
       }
     ]
   }

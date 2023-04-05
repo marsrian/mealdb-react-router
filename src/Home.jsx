@@ -7,12 +7,12 @@ import LoadingSpinner from './LoadingSpinner';
 const Home = () => {
     const navigation = useNavigation();
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col h-[100vh]'>
             <Header></Header>
             <div>
                 {navigation.state === 'loading' ? <LoadingSpinner></LoadingSpinner> : ''}
             </div>
-            <div className='min-h-[calc(100vh-128px)]]'>
+            <div className=''>
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
